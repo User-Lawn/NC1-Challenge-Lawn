@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		708CD5202820364800438E66 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 708CD51F2820364800438E66 /* CameraView.swift */; };
 		70AA29CC281FC72400B95FF8 /* NC1_Lawn_SoMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AA29CB281FC72400B95FF8 /* NC1_Lawn_SoMacApp.swift */; };
 		70AA29CE281FC72400B95FF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AA29CD281FC72400B95FF8 /* ContentView.swift */; };
 		70AA29D0281FC72600B95FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70AA29CF281FC72600B95FF8 /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		708CD51F2820364800438E66 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		70AA29C8281FC72400B95FF8 /* NC1-Lawn-SoMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NC1-Lawn-SoMac.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		70AA29CB281FC72400B95FF8 /* NC1_Lawn_SoMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC1_Lawn_SoMacApp.swift; sourceTree = "<group>"; };
 		70AA29CD281FC72400B95FF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				70AA29D9281FD21A00B95FF8 /* HomeView.swift */,
 				70AA29DB2820264F00B95FF8 /* ChoiceView.swift */,
 				70AA29DD282028E300B95FF8 /* CertificationView.swift */,
+				708CD51F2820364800438E66 /* CameraView.swift */,
 				70AA29CF281FC72600B95FF8 /* Assets.xcassets */,
 				70AA29D1281FC72600B95FF8 /* Preview Content */,
 			);
@@ -146,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				708CD5202820364800438E66 /* CameraView.swift in Sources */,
 				70AA29DA281FD21A00B95FF8 /* HomeView.swift in Sources */,
 				70AA29DC2820264F00B95FF8 /* ChoiceView.swift in Sources */,
 				70AA29DE282028E300B95FF8 /* CertificationView.swift in Sources */,
@@ -282,6 +286,8 @@
 				DEVELOPMENT_TEAM = 4SJ8XJ2NSA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -311,6 +317,8 @@
 				DEVELOPMENT_TEAM = 4SJ8XJ2NSA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

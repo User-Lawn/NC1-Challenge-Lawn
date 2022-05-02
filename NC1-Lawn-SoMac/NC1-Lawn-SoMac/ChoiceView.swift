@@ -17,9 +17,18 @@ struct ChoiceView: View {
                 .offset(y: -50)
             
             VStack(spacing: 200){
-                
-                Image("GoToLawnSoMac")
-                
+                Button {
+                    
+                } label: {
+                    
+                    NavigationLink(destination: CameraView()) {
+                        
+                        Image("GoToLawnSoMac")
+                        
+                            .frame(width: 30)
+                    }
+                }
+               
                 Image("GoToMySoMac")
                     .offset(y: -40)
                 
