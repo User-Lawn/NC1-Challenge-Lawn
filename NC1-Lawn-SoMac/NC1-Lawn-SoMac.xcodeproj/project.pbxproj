@@ -11,6 +11,8 @@
 		70AA29CE281FC72400B95FF8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AA29CD281FC72400B95FF8 /* ContentView.swift */; };
 		70AA29D0281FC72600B95FF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70AA29CF281FC72600B95FF8 /* Assets.xcassets */; };
 		70AA29D3281FC72600B95FF8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70AA29D2281FC72600B95FF8 /* Preview Assets.xcassets */; };
+		70AA29DA281FD21A00B95FF8 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AA29D9281FD21A00B95FF8 /* HomeView.swift */; };
+		70AA29DC2820264F00B95FF8 /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70AA29DB2820264F00B95FF8 /* ChoiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		70AA29CD281FC72400B95FF8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		70AA29CF281FC72600B95FF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70AA29D2281FC72600B95FF8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		70AA29D9281FD21A00B95FF8 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		70AA29DB2820264F00B95FF8 /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				70AA29CB281FC72400B95FF8 /* NC1_Lawn_SoMacApp.swift */,
 				70AA29CD281FC72400B95FF8 /* ContentView.swift */,
+				70AA29D9281FD21A00B95FF8 /* HomeView.swift */,
+				70AA29DB2820264F00B95FF8 /* ChoiceView.swift */,
 				70AA29CF281FC72600B95FF8 /* Assets.xcassets */,
 				70AA29D1281FC72600B95FF8 /* Preview Content */,
 			);
@@ -137,6 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70AA29DA281FD21A00B95FF8 /* HomeView.swift in Sources */,
+				70AA29DC2820264F00B95FF8 /* ChoiceView.swift in Sources */,
 				70AA29CE281FC72400B95FF8 /* ContentView.swift in Sources */,
 				70AA29CC281FC72400B95FF8 /* NC1_Lawn_SoMacApp.swift in Sources */,
 			);
