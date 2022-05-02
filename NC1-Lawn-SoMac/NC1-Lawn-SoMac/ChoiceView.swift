@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ChoiceView: View {
     var body: some View {
+        
         ZStack{
             
             Image("BG2")
