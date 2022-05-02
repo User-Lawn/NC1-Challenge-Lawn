@@ -9,25 +9,60 @@ import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        ZStack{
+       
+        NavigationView{
             
-            Image("BG1").ignoresSafeArea()
-            
-            VStack{
+            ZStack{
                 
-                VStack(spacing: -10){
+                Image("BG1").ignoresSafeArea()
+                
+                    .toolbar {
+                        
+                        ToolbarItem(placement: .navigationBarTrailing) {
+                            
+                            Button {
+                                
+                            } label: {
+                                
+                                NavigationLink(destination: CertificationView()) {
+                                    
+                                   Image(systemName:"person.text.rectangle")
+                                        .frame(width: 30)
+                                }
+                            }
+                        }
+                    }.accentColor(.black)
+                
+                VStack{
                     
-                    Image("GoToSoMac")
+                    VStack(spacing: -10){
+                       
+                        Button {
+                            
+                        } label: {
+                            
+                            NavigationLink(destination: ChoiceView()) {
+                                
+                                Image("GoToSoMac")
+                                
+                                    .frame(width: 30)
+                            }
+                        }
+                       
+                        Image("GoToGallery")
+                    }
                     
-                    Image("GoToGallery")
-                }
-                
-                
-                Image("Mention")
-                
-                
-            }.offset(y: 200)
+                    
+                    Image("Mention")
+                    
+                    
+                }.offset(y: 150)
+            }
         }
+        .navigationTitle("쏘맥")
+        .navigationBarTitleDisplayMode(.inline)
+        
+      
     }
 }
 

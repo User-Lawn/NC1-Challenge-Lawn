@@ -9,8 +9,16 @@ import SwiftUI
 
 struct CertificationView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        
+        ZStack{
+            Image("BG3").ignoresSafeArea()
+            
+            Image("Certification")
+            
+            Image("Wallet")
+                .offset(y: 120)
+            
+        }
     }
 }
 
