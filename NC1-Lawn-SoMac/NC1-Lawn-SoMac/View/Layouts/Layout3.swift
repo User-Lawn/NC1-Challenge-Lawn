@@ -52,6 +52,6 @@ struct Layout3: View {
 
 struct Layout3_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GalleryView()
     }
 }

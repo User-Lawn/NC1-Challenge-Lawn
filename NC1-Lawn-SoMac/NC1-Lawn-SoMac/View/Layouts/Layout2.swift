@@ -48,6 +48,6 @@ struct Layout2: View {
 
 struct Layout2_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GalleryView()
     }
 }

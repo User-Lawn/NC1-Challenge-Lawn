@@ -8,30 +8,52 @@
 import SwiftUI
 
 struct HomeView: View {
+    
+    @State var showSheet: Bool = false
+    
     var body: some View {
-       
+                
+        
         NavigationView{
             
             ZStack{
                 
                 Image("BG1").ignoresSafeArea()
-                
+                    .navigationBarTitleDisplayMode(.inline)
+                    .navigationTitle("쏘맥")
                     .toolbar {
                         
                         ToolbarItem(placement: .navigationBarTrailing) {
                             
-                            Button {
+                            Button { showSheet.toggle()} label: {
                                 
-                            } label: {
-                                
-                                NavigationLink(destination: CertificationView()) {
-                                    
-                                   Image(systemName:"person.text.rectangle")
-                                        .frame(width: 30)
-                                }
-                            }
-                        }
-                    }.accentColor(.black)
+                                Image(systemName:"person.text.rectangle")
+                                    .frame(width: 30)
+                                    .accentColor(.black)
+                            
+                                    }
+                                    .halfSheet(showSheet: $showSheet) {
+                                        ZStack{
+                                       
+                                            Image("Rectangle")
+                                       
+                                            VStack(spacing: -200){
+                                       
+                                                Image("Certification")
+                                                    .padding(.top, 300)
+                                       
+                                                Button {showSheet.toggle()} label: {
+                                                    Image("Close")
+                                                   
+                                                }
+                                                
+                                       
+                                            }
+                                        }
+                                                   .ignoresSafeArea()
+                        } onEnd: {print("Dismissed")}
+                    }
+                }
                 
                 VStack{
                     
@@ -49,19 +71,27 @@ struct HomeView: View {
                             }
                         }
                        
-                        Image("GoToGallery")
+                        Button {
+                            
+                        } label: {
+                            
+                            NavigationLink(destination: GalleryView()) {
+                                
+                                Image("GoToGallery")
+                                
+                                    .frame(width: 30)
+                            }
+                        }
+                        
                     }
                     
                     
                     Image("Mention")
                     
                     
-                }.offset(y: 150)
+                }.offset(y: 180)
             }
         }
-        .navigationTitle("쏘맥")
-        .navigationBarTitleDisplayMode(.inline)
-        
       
     }
 }
@@ -71,3 +101,4 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+

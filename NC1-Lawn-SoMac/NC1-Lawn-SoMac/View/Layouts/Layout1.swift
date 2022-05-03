@@ -55,6 +55,6 @@ struct Layout1: View {
 
 struct Layout1_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        GalleryView()
     }
 }

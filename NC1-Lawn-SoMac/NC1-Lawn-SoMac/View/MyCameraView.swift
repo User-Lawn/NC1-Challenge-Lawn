@@ -1,5 +1,5 @@
 //
-//  CustomCameraVIew.swift
+//  MyCameraView.swift
 //  NC1-Lawn-SoMac
 //
 //  Created by Jun.Mac on 2022/05/03.
@@ -9,16 +9,16 @@ import SwiftUI
 import AVFoundation
 
 
-struct CameraView: View {
+struct MyCameraView: View {
     
-    @StateObject var camera = CameraModel()
+    @StateObject var camera = MyCameraModel()
     
     var body: some View{
         
         ZStack{
             
             // Going to Be Camera preview...
-            CameraPreview(camera: camera)
+            MyCameraPreview(camera: camera)
                 .ignoresSafeArea(.all, edges: .all)
             
             VStack{
@@ -42,44 +42,51 @@ struct CameraView: View {
                 }
                 
                 Spacer()
-                
-                HStack{
+                VStack{
                     
-                    // if taken showing save and again take button...
+                    Image("MySoMacFrame")
+                        .padding(.bottom, 250)
+                        .padding(.trailing, 30)
                     
-                    if camera.isTaken{
+                    HStack{
                         
-                        Button(action: {if !camera.isSaved{camera.savePic()}}, label: {
-                            Text(camera.isSaved ? "Saved" : "Save")
-                                .foregroundColor(.black)
-                                .fontWeight(.semibold)
-                                .padding(.vertical,10)
-                                .padding(.horizontal,20)
-                                .background(Color.white)
-                                .clipShape(Capsule())
-                        })
-                        .padding(.leading)
+                        // if taken showing save and again take button...
                         
-                        Spacer()
-                    }
-                    else{
-                        
-                        Button(action: camera.takePic, label: {
+                        if camera.isTaken{
                             
-                            ZStack{
+                            Button(action: {if !camera.isSaved{camera.savePic()}}, label: {
+                                Text(camera.isSaved ? "Saved" : "Save")
+                                    .foregroundColor(.black)
+                                    .fontWeight(.semibold)
+                                    .padding(.vertical,10)
+                                    .padding(.horizontal,20)
+                                    .background(Color.white)
+                                    .clipShape(Capsule())
+                            })
+                            .padding(.leading)
+                            
+                            Spacer()
+                        }
+                        else{
+                            
+                            Button(action: camera.takePic, label: {
                                 
-                                Circle()
-                                    .fill(Color.white)
-                                    .frame(width: 65, height: 65)
-                                
-                                Circle()
-                                    .stroke(Color.white,lineWidth: 2)
-                                    .frame(width: 75, height: 75)
-                            }
-                        })
+                                ZStack{
+                                    
+                                    Circle()
+                                        .fill(Color.white)
+                                        .frame(width: 65, height: 65)
+                                    
+                                    Circle()
+                                        .stroke(Color.white,lineWidth: 2)
+                                        .frame(width: 75, height: 75)
+                                }
+                            })
+                        }
                     }
+                    .frame(height: 75)
                 }
-                .frame(height: 75)
+               
             }
         }
         .onAppear(perform: {
@@ -89,12 +96,14 @@ struct CameraView: View {
         .alert(isPresented: $camera.alert) {
             Alert(title: Text("Please Enable Camera Access"))
         }
+      
     }
 }
 
+
 // Camera Model...
 
-class CameraModel: NSObject,ObservableObject,AVCapturePhotoCaptureDelegate{
+class MyCameraModel: NSObject,ObservableObject,AVCapturePhotoCaptureDelegate{
     
     @Published var isTaken = false
     
@@ -233,9 +242,9 @@ class CameraModel: NSObject,ObservableObject,AVCapturePhotoCaptureDelegate{
 
 // setting view for preview...
 
-struct CameraPreview: UIViewRepresentable {
+struct MyCameraPreview: UIViewRepresentable {
     
-    @ObservedObject var camera : CameraModel
+    @ObservedObject var camera : MyCameraModel
     
     func makeUIView(context: Context) ->  UIView {
      

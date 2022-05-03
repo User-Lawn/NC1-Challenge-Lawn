@@ -21,7 +21,7 @@ struct ChoiceView: View {
                     
                 } label: {
                     
-                    NavigationLink(destination: CameraView()) {
+                    NavigationLink(destination: LawnCameraView()) {
                         
                         Image("GoToLawnSoMac")
                         
@@ -29,8 +29,18 @@ struct ChoiceView: View {
                     }
                 }
                
-                Image("GoToMySoMac")
-                    .offset(y: -40)
+                Button {
+                    
+                } label: {
+                    
+                    NavigationLink(destination: MyCameraView()) {
+                        
+                        Image("GoToMySoMac")
+                            .offset(y: -40)
+                            .frame(width: 30)
+                    }
+                }
+               
                 
             }
         }
