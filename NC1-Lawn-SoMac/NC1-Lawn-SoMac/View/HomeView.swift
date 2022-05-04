@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    
+    @State var tap = false
     @State var showSheet: Bool = false
     
     var body: some View {
@@ -30,6 +30,7 @@ struct HomeView: View {
                                 Image(systemName:"person.text.rectangle")
                                     .frame(width: 30)
                                     .accentColor(.black)
+                                    
                             
                                     }
                                     .halfSheet(showSheet: $showSheet) {
@@ -43,6 +44,7 @@ struct HomeView: View {
                                                     .padding(.top, 300)
                                        
                                                 Button {showSheet.toggle()} label: {
+                                                    
                                                     Image("Close")
                                                    
                                                 }
@@ -58,7 +60,7 @@ struct HomeView: View {
                 VStack{
                     
                     VStack(spacing: -10){
-                       
+                        
                         Button {
                             
                         } label: {
@@ -66,18 +68,20 @@ struct HomeView: View {
                             NavigationLink(destination: ChoiceView()) {
                                 
                                 Image("GoToSoMac")
-                                
-                                    
+                                   
+                                       
                             }
+                                    
                         }
-                       
+                        
                         Button {
                             
                         } label: {
                             
-                            NavigationLink(destination: GalleryView()) {
+                            NavigationLink(destination: SoMacGuideView()) {
                                 
                                 Image("GoToGallery")
+                                    .scaleEffect(tap ? 1.2 : 1)
                                 
                                     
                             }
