@@ -44,10 +44,14 @@ struct LawnCameraView: View {
                 
                 Spacer()
                 VStack{
+                
+                    Image("LawnSoMac")
+                        .padding(.trailing, 200)
                     
                     Image("LawnSoMacFrame")
                         .padding(.bottom, 150)
-                        .padding(.trailing, 30)
+                        
+                       
                     
                     HStack{
                         

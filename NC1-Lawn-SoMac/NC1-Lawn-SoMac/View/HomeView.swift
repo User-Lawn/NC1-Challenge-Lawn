@@ -67,7 +67,7 @@ struct HomeView: View {
                                 
                                 Image("GoToSoMac")
                                 
-                                    .frame(width: 30)
+                                    
                             }
                         }
                        
@@ -79,7 +79,7 @@ struct HomeView: View {
                                 
                                 Image("GoToGallery")
                                 
-                                    .frame(width: 30)
+                                    
                             }
                         }
                         

@@ -25,7 +25,7 @@ struct ChoiceView: View {
                         
                         Image("GoToLawnSoMac")
                         
-                            .frame(width: 30)
+                            
                     }
                 }
                
@@ -37,7 +37,7 @@ struct ChoiceView: View {
                         
                         Image("GoToMySoMac")
                             .offset(y: -40)
-                            .frame(width: 30)
+                            
                     }
                 }
                

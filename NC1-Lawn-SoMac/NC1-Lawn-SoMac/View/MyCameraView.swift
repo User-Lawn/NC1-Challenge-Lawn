@@ -44,9 +44,15 @@ struct MyCameraView: View {
                 Spacer()
                 VStack{
                     
-                    Image("MySoMacFrame")
-                        .padding(.bottom, 250)
-                        .padding(.trailing, 30)
+                    VStack{
+                        
+                        Image("MySoMac")
+                            .padding(.trailing, 200)
+                        
+                        Image("MySoMacFrame")
+                            .padding(.bottom, 150)
+                    
+                    }.offset(y: -150)
                     
                     HStack{
                         
