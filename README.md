@@ -26,3 +26,4 @@
 
 - `SwiftUI`
 - `UIKit`
+- `AVFoundation`
