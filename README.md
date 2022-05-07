@@ -1,4 +1,4 @@
-![Logo](./assets/logo.png)
+![Logo](./assets/LawnSoMac.png)
 
 
 # 🍻 로운 쏘맥(Lawn SoMac)
