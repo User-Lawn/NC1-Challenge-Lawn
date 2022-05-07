@@ -18,7 +18,7 @@
 
 ## :framed_picture: Demo
 
-- [Lawn SoMac](./Presentation/LawnSoMac.MP4)
+- [Lawn SoMac](href: https://miro.com/app/board/uXjVO6mRVMk=/?moveToWidget=3458764524773841551&cot=14)
 
 
 
