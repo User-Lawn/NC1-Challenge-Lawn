@@ -18,7 +18,7 @@
 
 ## :framed_picture: Demo
 
-- [Lawn SoMac](https://miro.com/app/board/uXjVO6mRVMk=/?moveToWidget=3458764524773841551&cot=14)
+- [Lawn SoMac](https://youtube.com/shorts/zBV-_MIeYLg?feature=share)
 
 
 
